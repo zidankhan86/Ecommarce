@@ -4,7 +4,7 @@
 <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Shop List</h4>
+                  <h4 class="card-title">Category List</h4>
 
                   <div class="table-responsive">
                     <table class="table table-striped">
@@ -12,25 +12,22 @@
                         <tr>
 
                           <th>ID</th>
-                          <th>Shop name</th>
-                          <th>Contract</th>
-                          <th>Address</th>
-                          <th>Image</th>
-                          <th>About</th>
+                          <th>Category Name</th>
+                          <th>Type</th>
 
                         </tr>
                       </thead>
                       <tbody>
-                        @foreach ($shop as $data )
+                        @foreach ($category as $data)
+
+
                         <tr>
 
                           <td>{{$data->id}}</td>
                           <td>{{$data->name}}</td>
-                          <td>{{$data->contract}}</td>
-                          <td>{{$data->address}}</td>
-                          <td><img width="200px" src="{{url('/uploads/',$data->image)}}"></td>
-                          <td>{{$data->about}}</td>
-                          <td><a class="btn btn-danger" href="{{route('delete.shop',$data->id)}}">Delete</a></td>
+                          <td>{{$data->type}}</td>
+                          <td><a href="" class="btn btn-danger">delete</a></td>
+
 
                         </tr>
                         @endforeach

@@ -59,6 +59,11 @@
                 <li class="nav-item"> <a class="nav-link" href="{{route('add.category')}}">Add Category</a></li>
               </ul>
             </div>
+            <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="{{route('category.list')}}"> Category List</a></li>
+                </ul>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">

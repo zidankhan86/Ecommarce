@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ShopController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,9 @@ Route::post('/product/store',[ProductController::class,'product_store'])->name('
 Route::get('/shop/form',[ShopController::class,'shop_form'])->name('add.shop');
 Route::post('/shop/store',[ShopController::class,'shop_store'])->name('shop.store');
 Route::get('/shop/list',[ShopController::class,'shop_list'])->name('shop.list');
+Route::get('/delete/shop/{id}',[ShopController::class,'delete_shop'])->name('delete.shop');
 
 Route::get('/category/add',[CategoryController::class,'category_form'])->name('add.category');
 Route::Post('/category/store',[CategoryController::class,'category_store'])->name('category.store');
+Route::get('/category/list',[CategoryController::class,'category_list'])->name('category.list');
+Route::get('/delete/Category/{id}',[CategoryController::class,'delete_category'])->name('category.delete');

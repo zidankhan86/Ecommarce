@@ -27,11 +27,11 @@ return view('backend.pages.shopForm');
     }
     Shop::create([
 
-            'name'=>$request->name,
-            'contract'=>$request->contract,
-            'address'=>$request->address,
-            'image'=>$request->image,
-            'about'=>$request->about
+            "name"=>$request->name,
+            "contract"=>$request->contract,
+            "address"=>$request->address,
+            "image"=>$imageName,
+            "about"=>$request->about
 
 
     ]);
@@ -42,6 +42,13 @@ public function shop_list(){
     $shop=Shop::all();
 
     return view('backend.pages.shopList',compact('shop'));
+}
+public function delete_shop($id){
+
+    $delete=Shop::find($id);
+    $delete->delete();
+    return redirect()->back();
+
 }
 
 }

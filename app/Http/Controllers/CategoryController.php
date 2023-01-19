@@ -24,5 +24,18 @@ class CategoryController extends Controller
     ]);
     return redirect()->back();
  }
+ public function delete_category($id){
+    $delete=Category::find($id);
+    $delete->delete;
+
+    return redirect()->back();
+
+ }
+ public function category_list(){
+    $category=Category::all();
+
+return view('backend.pages.category.categoryList',compact('category'));
+
+}
 
 }
