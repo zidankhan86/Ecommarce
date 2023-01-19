@@ -17,7 +17,7 @@ return view('backend.pages.shopForm');
         'contract'=>'required',
         'address'=>'required',
         'image'=>'required',
-        'about'=>'reqired'
+        'about'=>'required'
 
     ];
     $imageName=null;
@@ -37,6 +37,11 @@ return view('backend.pages.shopForm');
     ]);
     return redirect()->back();
 
+}
+public function shop_list(){
+    $shop=Shop::all();
+
+    return view('backend.pages.shopList',compact('shop'));
 }
 
 }

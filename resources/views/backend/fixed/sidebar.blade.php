@@ -32,7 +32,7 @@
                 <li class="nav-item"><a class="nav-link" href="{{route('add.shop')}}">Add Shop</a></li>
               </ul>
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Shop List</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('shop.list')}}">Shop List</a></li>
               </ul>
             </div>
           </li>
@@ -56,7 +56,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Add Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('add.category')}}">Add Category</a></li>
               </ul>
             </div>
           </li>
