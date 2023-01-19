@@ -24,7 +24,8 @@ class ProductController extends Controller
         'name'=>'required',
         'details'=>'required',
         'image'=>'required',
-        'quantity'=>'required'
+        'quantity'=>'required',
+        'price'=>'required'
 
         ]);
 
@@ -38,7 +39,9 @@ class ProductController extends Controller
             'name'=>$request->name,
             'details'=>$request->details,
             'image'=>$imageName,
-            'quantity'=>$request->quantity
+            'quantity'=>$request->quantity,
+            'price'=>$request->price
+
 
         ]);
         return redirect()->back();

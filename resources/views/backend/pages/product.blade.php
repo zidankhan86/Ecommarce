@@ -25,6 +25,10 @@
             <label for="exampleInputCity1">Quantity</label>
             <input type="number" class="form-control" name="quantity" placeholder="Location">
           </div>
+          <div class="form-group">
+            <label for="exampleInputCity1">price</label>
+            <input type="number" class="form-control" name="price" placeholder="Location">
+          </div>
           <button type="submit" class="btn btn-primary mr-2">Submit</button>
           <button class="btn btn-light">Cancel</button>
         </form>
