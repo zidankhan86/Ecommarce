@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ShopController;
 use App\Models\Category;
@@ -21,9 +22,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/show/login',[LoginController::class,'show_login'])->name('show.login');
+Route::post('/login/process',[LoginController::class,'login_process'])->name('login.process');
 
 Route::get('/',[IndexController::class,'home'])->name('home.route');
+Route::get('/dashboard',[IndexController::class,'dashboard'])->name('dashboard.route');
 
 Route::get('/product/add',[ProductController::class,'product'])->name('add.product');
 Route::get('/product/list',[ProductController::class,'product_list'])->name('product.list');

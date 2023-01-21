@@ -10,4 +10,8 @@ class IndexController extends Controller
 
        return view('backend.index');
     }
+    public function dashboard(){
+
+        return view('backend.pages.dashboard.dashboard');
+    }
 }
