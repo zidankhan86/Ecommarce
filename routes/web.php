@@ -22,22 +22,30 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/show/login',[LoginController::class,'show_login'])->name('show.login');
-Route::post('/login/process',[LoginController::class,'login_process'])->name('login.process');
 
-Route::get('/',[IndexController::class,'home'])->name('home.route');
-Route::get('/dashboard',[IndexController::class,'dashboard'])->name('dashboard.route');
 
-Route::get('/product/add',[ProductController::class,'product'])->name('add.product');
-Route::get('/product/list',[ProductController::class,'product_list'])->name('product.list');
-Route::post('/product/store',[ProductController::class,'product_store'])->name('product.store');
+    Route::get('/show/login',[LoginController::class,'show_login'])->name('show.login');
+    Route::post('/login/process',[LoginController::class,'login_process'])->name('login.process');
 
-Route::get('/shop/form',[ShopController::class,'shop_form'])->name('add.shop');
-Route::post('/shop/store',[ShopController::class,'shop_store'])->name('shop.store');
-Route::get('/shop/list',[ShopController::class,'shop_list'])->name('shop.list');
-Route::get('/delete/shop/{id}',[ShopController::class,'delete_shop'])->name('delete.shop');
+    Route::group(['middleware','admin'], function(){
 
-Route::get('/category/add',[CategoryController::class,'category_form'])->name('add.category');
-Route::Post('/category/store',[CategoryController::class,'category_store'])->name('category.store');
-Route::get('/category/list',[CategoryController::class,'category_list'])->name('category.list');
-Route::get('/delete/Category/{id}',[CategoryController::class,'delete_category'])->name('category.delete');
+
+    Route::get('/',[IndexController::class,'home'])->name('home.route');
+    Route::get('/dashboard',[IndexController::class,'dashboard'])->name('dashboard.route');
+
+    Route::get('/product/add',[ProductController::class,'product'])->name('add.product');
+    Route::get('/product/list',[ProductController::class,'product_list'])->name('product.list');
+    Route::post('/product/store',[ProductController::class,'product_store'])->name('product.store');
+
+    Route::get('/shop/form',[ShopController::class,'shop_form'])->name('add.shop');
+    Route::post('/shop/store',[ShopController::class,'shop_store'])->name('shop.store');
+    Route::get('/shop/list',[ShopController::class,'shop_list'])->name('shop.list');
+    Route::get('/delete/shop/{id}',[ShopController::class,'delete_shop'])->name('delete.shop');
+
+    Route::get('/category/add',[CategoryController::class,'category_form'])->name('add.category');
+    Route::Post('/category/store',[CategoryController::class,'category_store'])->name('category.store');
+    Route::get('/category/list',[CategoryController::class,'category_list'])->name('category.list');
+    Route::get('/delete/Category/{id}',[CategoryController::class,'delete_category'])->name('category.delete');
+
+
+});
