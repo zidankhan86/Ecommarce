@@ -8,6 +8,6 @@ class IndexFrontendController extends Controller
 {
     public function home(){
 
-        return view('frontend.pages.master');
+        return view('frontend.pages.home');
     }
 }
