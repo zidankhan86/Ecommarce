@@ -27,7 +27,7 @@
                           <td>{{$data->id}}</td>
                           <td>{{$data->name}}</td>
                           <td>{{$data->details}}</td>
-                          <td><img width="200px" src="{{url('/uploads/',$data->image)}}"></td>
+                          <td><img src="{{url('/uploads/'.$data->image)}}" alt="Product Image"> </td>
                           <td>{{$data->quantity}}</td>
 
                         </tr>

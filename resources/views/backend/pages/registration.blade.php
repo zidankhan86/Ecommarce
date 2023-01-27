@@ -38,7 +38,7 @@
 
                 <div class="d-flex justify-content-center">
                   <button type="submit"
-                    class="btn btn-success  btn-lg gradient-custom-4 text-body">SIGN-UP</button>
+                    class="btn btn-success btn-lg gradient-custom-4 text-body">SIGN-UP</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"

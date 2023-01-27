@@ -41,7 +41,7 @@ public function registration_create(Request $request){
             'address'=>$request->address,
             'phone'=>$request->phone,
             'password'=>bcrypt($request->password),
-            'role'=>$request->role
+            'role'=>"customer"
 
         ]);
         return redirect()->back();

@@ -25,11 +25,12 @@ Route::get('/', function () {
 });
 //Frontend
 Route::get('/',[IndexFrontendController::class,'home'])->name('home');
-Route::get('/main/home',[IndexFrontendController::class,'main_home'])->name('main.home');
+
 
 Route::get('/mens/products',[ProductController::class,'mens_products'])->name('mens.products');
 Route::get('/women/products',[ProductController::class,'women_products'])->name('women.products');
 Route::get('/kinds/products',[ProductController::class,'kids_products'])->name('kids.products');
+
 
 
 

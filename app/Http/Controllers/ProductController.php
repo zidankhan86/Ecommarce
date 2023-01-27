@@ -44,12 +44,15 @@ class ProductController extends Controller
 
 
         ]);
+        //dd($request->all());
         return redirect()->back();
+
 
     }
     public function mens_products(){
+        $mensProducts=Product::all();
 
-        return view('frontend.pages.men.men');
+        return view('frontend.pages.men.men',compact('mensProducts'));
     }
 
 
