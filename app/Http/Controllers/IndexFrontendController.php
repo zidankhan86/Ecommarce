@@ -10,4 +10,8 @@ class IndexFrontendController extends Controller
 
         return view('frontend.pages.home');
     }
+    
+    public function main_home(){
+        return view('frontend.pages.mainhome.main');
+    }
 }

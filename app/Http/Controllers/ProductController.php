@@ -47,5 +47,21 @@ class ProductController extends Controller
         return redirect()->back();
 
     }
+    public function mens_products(){
+
+        return view('frontend.pages.men.men');
+    }
+
+
+    public function women_products(){
+
+        return view('frontend.pages.women.women');
+    }
+
+    public function kids_products(){
+
+        return view('frontend.pages.kids.kids');
+    }
+
 
 }

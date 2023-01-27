@@ -25,13 +25,21 @@ Route::get('/', function () {
 });
 //Frontend
 Route::get('/',[IndexFrontendController::class,'home'])->name('home');
+Route::get('/main/home',[IndexFrontendController::class,'main_home'])->name('main.home');
+
+Route::get('/mens/products',[ProductController::class,'mens_products'])->name('mens.products');
+Route::get('/women/products',[ProductController::class,'women_products'])->name('women.products');
+Route::get('/kinds/products',[ProductController::class,'kids_products'])->name('kids.products');
 
 
 
 //Backend
- 
+
     Route::get('/show/login',[LoginController::class,'show_login'])->name('show.login');
     Route::post('/login/process',[LoginController::class,'login_process'])->name('login.process');
+    Route::get('/user/registration',[LoginController::class,'registration'])->name('user.registration');
+    Route::post('/registration/create',[LoginController::class,'registration_create'])->name('registration.create');
+
 
     Route::group(['middleware'=>'admin','prefix'=>'admin'], function(){
 

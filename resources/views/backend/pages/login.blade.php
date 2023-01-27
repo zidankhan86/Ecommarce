@@ -31,16 +31,16 @@
               </div>
               <h3>Admin Login</h3>
 
-              <form class="pt-3">
+              <form action="{{route('login.process')}}" method="POST" class="pt-3">
                 @csrf
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                  <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="{{route('login.process')}}">LOGIN</a>
+                  <button type="submit" class="btn btn-success">Login</button>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
 

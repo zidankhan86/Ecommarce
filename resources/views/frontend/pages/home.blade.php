@@ -8,7 +8,7 @@
                     <div class="left-content">
                         <div class="thumb">
                             <div class="inner-content">
-                                <h4>We Are Hexashop</h4>
+                                <h4>Ei ta NIDHIR SHOP</h4>
                                 <span>Awesome, clean &amp; creative HTML5 Template</span>
                                 <div class="main-border-button">
                                     <a href="#">Purchase Now!</a>
@@ -252,7 +252,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-01.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/women-01.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>New Green Jacket</h4>
@@ -275,7 +275,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-02.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/women-02.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Dress</h4>
@@ -298,7 +298,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-03.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/women-03.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Spring Collection</h4>
@@ -321,7 +321,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-01.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/women-01.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Spring</h4>
@@ -369,7 +369,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/kid-01.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/kid-01.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>School Collection</h4>
@@ -392,7 +392,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/kid-02.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/kid-02.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Summer Cap</h4>
@@ -415,7 +415,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/kid-03.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/kid-03.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Kid</h4>
@@ -438,7 +438,7 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/kid-01.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/kid-01.jpg')}}" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Spring</h4>
@@ -489,12 +489,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="first-image">
-                                    <img src="assets/images/explore-image-01.jpg" alt="">
+                                    <img src="{{url('/frontend/assets/images/explore-image-01.jpg')}}" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="second-image">
-                                    <img src="assets/images/explore-image-02.jpg" alt="">
+                                    <img src="{{url('assets/images/explore-image-02.jpg')}}" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">

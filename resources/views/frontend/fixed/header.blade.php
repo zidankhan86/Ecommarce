@@ -6,14 +6,14 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                       <h4 style="color: green"  >BDCOM</h4>
+                       <h6 style="color: green"  >BDCOM</h6>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#men">Men's</a></li>
-                            <li class="scroll-to-section"><a href="#women">Women's</a></li>
-                            <li class="scroll-to-section"><a href="#kids">Kid's</a></li>
+                            <li class="scroll-to-section"><a href="{{route('main.home')}}">Home</a></li>
+                            <li class="scroll-to-section"><a href="{{route('mens.products')}}">Men's</a></li>
+                            <li class="scroll-to-section"><a href="{{route('women.products')}}">Women's</a></li>
+                            <li class="scroll-to-section"><a href="{{route('kids.products')}}">Kid's</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">Pages</a>
                                 <ul>
@@ -33,6 +33,8 @@
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#explore">Contract Us</a></li>
+                            <li class="btn btn-info"><a href="{{route('user.registration')}}">Registration</a></li>
+                            <li class="btn btn-success"><a href="{{route('show.login')}}">Login</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
