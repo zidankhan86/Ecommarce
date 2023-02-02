@@ -31,6 +31,7 @@ Route::get('/mens/products',[ProductController::class,'mens_products'])->name('m
 Route::get('/women/products',[ProductController::class,'women_products'])->name('women.products');
 Route::get('/kinds/products',[ProductController::class,'kids_products'])->name('kids.products');
 
+Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 
 
 

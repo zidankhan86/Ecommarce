@@ -16,7 +16,7 @@ class LoginController extends Controller
         // dd($request->all());
         $credentials=$request->except('_token');
         if( Auth::attempt($credentials)){
-            return redirect()->route('home');
+            return redirect()->route('home.route');
         }else{
             return redirect()->back();
         }
@@ -45,5 +45,10 @@ public function registration_create(Request $request){
 
         ]);
         return redirect()->back();
+}
+public function logout(){
+
+    Auth::logout();
+    return redirect()->route('home');
 }
 }

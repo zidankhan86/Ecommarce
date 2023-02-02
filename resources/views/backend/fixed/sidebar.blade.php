@@ -97,5 +97,11 @@
               <span class="menu-title">Documentation</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('logout')}}">
+              <i class="icon-paper menu-icon"   ></i>
+              <span class="menu-title" >Logout</span>
+            </a>
+          </li>
         </ul>
       </nav>
