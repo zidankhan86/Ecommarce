@@ -29,6 +29,18 @@
             <label for="exampleInputCity1">price</label>
             <input type="number" class="form-control" name="price" placeholder="Location">
           </div>
+
+          <label for="cars">Choose Category</label>
+
+                    <select name="category_id" id="cars" class="form-control">
+
+                       @foreach ($categories as $category )
+
+                    <option value="{{$category->id}}">{{$category->name}}</option>
+                    @endforeach
+
+                    </select>
+
           <button type="submit" class="btn btn-primary mr-2">Submit</button>
           <button class="btn btn-light">Cancel</button>
         </form>

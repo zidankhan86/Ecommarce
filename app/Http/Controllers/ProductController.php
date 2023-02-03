@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     public function product(){
-        return view('backend.pages.product');
+        $categories=Category::all();
+        return view('backend.pages.product',compact('categories'));
     }
 
     public function product_list(){
@@ -40,7 +42,8 @@ class ProductController extends Controller
             'details'=>$request->details,
             'image'=>$imageName,
             'quantity'=>$request->quantity,
-            'price'=>$request->price
+            'price'=>$request->price,
+            'category_id'=>$request->category_id
 
 
         ]);
